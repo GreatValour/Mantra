@@ -16904,5 +16904,25 @@
         </div>
     </div>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var careersLink = document.getElementById('careersLink');
+        var dropdownList = document.querySelector('ul');
+
+        careersLink.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the default behavior of the link
+            window.location.href = careersLink.getAttribute('href'); // Navigate to the link URL
+        });
+
+        // Show/hide the dropdown on hover
+        careersLink.addEventListener('mouseover', function () {
+            dropdownList.style.display = 'block';
+        });
+
+        careersLink.addEventListener('mouseout', function () {
+            dropdownList.style.display = 'none';
+        });
+    });
+</script>
 
 </html>
