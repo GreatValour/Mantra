@@ -13231,67 +13231,75 @@
             button:hover::before {
                 width: 100%;
             }
+            .contact-form {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin-top: 8rem;
+}
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 600px) {
     .contact-form {
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        font-family: Arial, sans-serif;
-        margin-top: 8rem;
+        margin-top: 4rem; /* Adjust margin for smaller screens */
     }
+}
 
-    fieldset {
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        padding: 10px;
-        margin-bottom: 15px;
-    }
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
 
-    legend {
-        font-size: 2em;
-        font-weight: bold;
-    }
+legend {
+    font-size: 2em;
+    font-weight: bold;
+}
 
-    label {
-        display: block;
-        margin-bottom: 8px;
-        font-size: 1.5em;
-    }
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.5em;
+}
 
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    select,
-    input[type="file"],
-    input[type="number"] {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 15px;
-        box-sizing: border-box;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="file"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
-    input[type="file"] {
-        margin-top: 5px; /* Adjust as needed */
-    }
+input[type="file"] {
+    margin-top: 5px; /* Adjust as needed */
+}
 
-    button {
-        background-color: #4caf50;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 16px;
-    }
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
-    button:hover {
-        background-color: #cc2b0f;
-    }
+button:hover {
+    background-color: #cc2b0f;
+}
+
 </style>
     </pages-css>
 
