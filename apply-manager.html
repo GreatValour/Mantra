@@ -13003,6 +13003,108 @@
                 --column-flex: 490
             }
 
+            /* Apply general styles */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            .job-description {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #f8f8f8;
+                margin-top: 14rem;
+            }
+
+            /* Apply styles for the "Apply Now" button */
+            .apply-btn {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: #fff;
+                background-color: #e54b4b;
+                border-radius: 5px;
+            }
+
+            .btn-secondary {
+                background-color: #e54b4b;
+            }
+
+            /* Apply styles for the job description sections */
+            section {
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .label {
+                font-weight: bold;
+                font-size: 35px;
+            }
+
+            .detail p {
+                margin-bottom: 15px;
+                font-size: 16px;
+            }
+
+            /* Apply styles for qualification list */
+            .qualification-list {
+                list-style-type: none;
+                padding: 0;
+                font-size: 16px;
+            }
+
+            /* Apply styles for benefit list */
+            .benefits-list {
+                list-style-type: none;
+                padding: 0;
+                font-size: 16px;
+                margin-top: 20px;
+            }
+
+            /* Apply styles for the unordered lists in the job-related experience section */
+            .detail ul {
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+
+            /* Apply styles for the list items in the job-related experience section */
+            .detail li {
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+
+            /* Apply styles for headings in the job-related experience section */
+            .detail h3 {
+                margin-top: 10px;
+                font-size: 16px;
+            }
+
+            /* Apply styles for the paragraphs in the job-related experience section */
+            .detail p {
+                margin-bottom: 15px;
+                font-size: 16px;
+            }
+
+            .labee {
+                font-size: 16px;
+                margin-top: 20px;
+            }
+
+            .job-re {
+                margin-bottom: 10px;
+            }
+
             .card {
                 margin-left: 1rem;
                 margin-right: 2rem;
@@ -13049,14 +13151,12 @@
                 margin-bottom: 1.5rem;
                 flex: 1 1 0%;
                 color: rgba(156, 163, 175, 1);
-                margin-top: ;
             }
 
             .lists .list {
                 margin-bottom: 0.5rem;
                 display: flex;
-                margin-left: 0.5rem;
-                margin-top: 0.5rem;
+                margin-left: 0.5rem
             }
 
             .lists .list svg {
@@ -13065,7 +13165,7 @@
                 flex-shrink: 0;
                 margin-right: 0.5rem;
                 color: rgb(255, 255, 255);
-                margin-bottom: 0.5rem;
+                margin-bottom: 0.05rem;
             }
 
             .action {
@@ -13085,26 +13185,123 @@
             }
 
             .cards-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 20px;
-        }
+                display: flex;
+            }
 
             .action:hover {
                 background-color: white;
                 /* Hover color */
                 color: rgba(17, 24, 39, 1);
             }
-            .hidden{
-        display: none;
-    }
 
-    @media only screen and (min-width: 769px) {
-  body {
-    font-size: 18px; /* Increase font size for larger screens */
-  }
-}
+            button {
+                position: relative;
+                background-color: rgb(230, 34, 77);
+                border-radius: 5px;
+                box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+                padding: 15px;
+                background-repeat: no-repeat;
+                cursor: pointer;
+                box-sizing: border-box;
+                width: 154px;
+                height: 49px;
+                color: #fff;
+                border: none;
+                font-size: 20px;
+                transition: all 0.3s ease-in-out;
+                z-index: 1;
+                overflow: hidden;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            button::before {
+                content: "";
+                background-color: rgb(248, 50, 93);
+                width: 0;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: width 700ms ease-in-out;
+                display: inline-block;
+            }
+
+            button:hover::before {
+                width: 100%;
+            }
+
+            .contact-form {
+                width: 100%;
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                font-family: Arial, sans-serif;
+                margin-top: 8rem;
+            }
+
+            /* Add media query for smaller screens */
+            @media screen and (max-width: 600px) {
+                .contact-form {
+                    margin-top: 4rem;
+                    /* Adjust margin for smaller screens */
+                }
+            }
+
+            fieldset {
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                padding: 10px;
+                margin-bottom: 15px;
+            }
+
+            legend {
+                font-size: 2em;
+                font-weight: bold;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-size: 1.5em;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            select,
+            input[type="file"],
+            input[type="number"] {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            input[type="file"] {
+                margin-top: 5px;
+                /* Adjust as needed */
+            }
+
+            button {
+                background-color: #4caf50;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+            button:hover {
+                background-color: #cc2b0f;
+            }
         </style>
     </pages-css>
 
@@ -13365,8 +13562,8 @@
                                                             data-listposition="center" data-data-id="dataItem-lirzwy7y1"
                                                             data-state="menu false  link" data-index="2"
                                                             class="rqt3qI wixui-dropdown-menu__item vDnwi4"><a
-                                                                data-testid="linkElement" href="industries.html" target="_self"
-                                                                class="lY3Nwh" aria-haspopup="false">
+                                                                data-testid="linkElement" href="industries.html"
+                                                                target="_self" class="lY3Nwh" aria-haspopup="false">
                                                                 <div class="rBTT56">
                                                                     <div class="" style="text-align:left">
                                                                         <p class="foFAdY" style="text-align:left"
@@ -13383,7 +13580,8 @@
                                                                 <div class="rBTT56">
                                                                     <div class="" style="text-align:left">
                                                                         <a href="careers.html">
-                                                                            <p class="foFAdY" style="text-align:left" id="comp-knebed6b3label">Careers</p>
+                                                                            <p class="foFAdY" style="text-align:left"
+                                                                                id="comp-knebed6b3label">Careers</p>
                                                                         </a>
                                                                     </div>
                                                                 </div>
@@ -13455,153 +13653,70 @@
                             </div>
                         </div>
                     </header>
-                    <div class="cards-container">
-                        <div class="card">
-                            <div class="header">
-                                <span class="price">Operation Intern</span>
-                            </div>
-                            <ul class="lists">
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Overview</span>
-                                </li>
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Responsibilities</span>
-                                </li>
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Qualifications & Benefits</span>
-                                </li>
-                            </ul>
-                            <a href="operation.html">
-                                <button type="button" class="action">Learn More</button>
-                            </a>
 
-                        </div>
+                    <form class="contact-form" id="myForm" action="https://formspree.io/f/mayroypb" method="POST"
+                        enctype="multipart/form-data">
+                        <fieldset>
+                            <legend>Tell us about
+                                yourself</legend>
+                            <label for="Managerfirst_name">First
+                                name</label>
+                            <input type="text" name="Managerfirst_name" id="Managerfirst_name" required>
 
-                        <div class="card">
-                            <div class="header">
-                                <span class="price">Marketing Intern</span>
-                            </div>
-                            <ul class="lists">
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Overview</span>
-                                </li>
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Responsibilities</span>
-                                </li>
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Qualifications & Benefits</span>
-                                </li>
-                            </ul>
-                            <a href="marketing.html">
-                                <button type="button" class="action">Learn More</button>
-                            </a>
 
-                        </div>
+                            <label for="last_name">Last
+                                name</label>
+                            <input type="text" name="last_name" id="last_name" required>
 
-                        
-                            <div class="card">
-                                <div class="header">
-                                    <span class="price">Merchant Account Manager</span>
-                                </div>
-                                <ul class="lists">
-                                    <li class="list">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Overview</span>
-                                    </li>
-                                    <li class="list">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Responsibilities</span>
-                                    </li>
-                                    <li class="list">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Qualifications & Benefits</span>
-                                    </li>
-                                </ul>
-                                <a href="merchant-manager.html">
-                                    <button type="button" class="action">Learn MOre</button>
-                                </a>
-                            </div>
-                            
-                            <div class="hidden">
-                                <div class="card">
-                                    <div class="header">
-                                        <span class="price">Finance Intern</span>
-                                    </div>
-                                    <ul class="lists">
-                                        <li class="list">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg>
-                                            <span>Overview</span>
-                                        </li>
-                                        <li class="list">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg>
-                                            <span>Responsibilities</span>
-                                        </li>
-                                        <li class="list">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg>
-                                            <span>Qualifications & Benefits</span>
-                                        </li>
-                                    </ul>
-                                    <a href="your-link-here">
-                                        <button type="button" class="action">Learn More</button>
-                                    </a>
-                                </div>
-                                                        </div>
-                                                    </div>
-                            </div>
+                            <label for="email">Email</label><input type="email" name="email" id="email" required>
+
+                            <label for="phone_number">Phone
+                                number</label><input type="tel" name="phone_number" id="phone_number"
+                                placeholder="(XXX) XXX-XXXX" required>
+
+                            <label for="address">Country</label>
+                            <select name="country" id="country" required>
+                                <option value>
+                                    Country
+                                </option>
+                                <option value="United States of America">
+                                    United
+                                    States
+                                    of
+                                    America
+                                </option>
+                                <option value="Canada">
+                                    Canada
+                                </option>
+                            </select>
+
+                            <label for="owner_address">Address:</label>
+                            <input type="text" id="owner_address" name="owner_address" required>
+
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city" required>
+
+                            <label for="state">State:</label>
+                            <input type="text" id="State" name="State" required>
+
+                            <label for="zipcode">Zip
+                                Code:</label>
+                            <input type="number" id="zipcode" name="zipcode" pattern="\d{5}" placeholder="12345"
+                                required>
+                        </fieldset>
+                        <p><br /></p>
+                        <fieldset>
+                            <legend>Upload Resume
+                            </legend>
+                            <p style>Please
+                                upload your
+                                resume</p>
+                            <label for="upload_doc">Upload
+                                Resume</label><input type="file" name="upload_doc" id="upload_doc"
+                                accept=".pdf,.jpg,.png" required>
+                        </fieldset>
+                        <button class="btn submit-form" type="submit">Submit</button>
+                    </form>
 
 
 
@@ -14322,7 +14437,21 @@
                 aria-label="bottom of page"><span class="mHZSwn">bottom of page</span></div>
         </div>
     </div>
-<script src="//code.tidio.co/uojagssoo0zgyzcvlt7qvwdxisowzkjl.js" async></script>
+    <script src="//code.tidio.co/uojagssoo0zgyzcvlt7qvwdxisowzkjl.js" async></script>
 </body>
+<script>
+    document.getElementById('phone_number').addEventListener('input', function (event) {
+        let input = event.target;
+        let value = input.value.replace(/\D/g, ''); // Remove non-numeric characters
+        if (value.length > 10) {
+            value = value.slice(0, 10); // Limit to 10 digits
+        }
+        if (value.length > 3) {
+            // Format the phone number as (XXX) XXX-XXXX
+            value = value.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+        }
+        input.value = value;
+    });
+</script>
 
 </html>
