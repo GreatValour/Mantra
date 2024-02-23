@@ -13003,6 +13003,108 @@
                 --column-flex: 490
             }
 
+            /* Apply general styles */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            .job-description {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #f8f8f8;
+                margin-top: 14rem;
+            }
+
+            /* Apply styles for the "Apply Now" button */
+            .apply-btn {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: #fff;
+                background-color: #007bff;
+                border-radius: 5px;
+            }
+
+            .btn-secondary {
+                background-color: #e54b4b;
+            }
+
+            /* Apply styles for the job description sections */
+            section {
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .label {
+                font-weight: bold;
+                font-size: 35px;
+            }
+
+            .detail p {
+                margin-bottom: 15px;
+                font-size: 16px;
+            }
+
+            /* Apply styles for qualification list */
+            .qualification-list {
+                list-style-type: none;
+                padding: 0;
+                font-size: 16px;
+            }
+
+            /* Apply styles for benefit list */
+            .benefits-list {
+                list-style-type: none;
+                padding: 0;
+                font-size: 16px;
+                margin-top: 20px;
+            }
+
+            /* Apply styles for the unordered lists in the job-related experience section */
+            .detail ul {
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+
+            /* Apply styles for the list items in the job-related experience section */
+            .detail li {
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+
+            /* Apply styles for headings in the job-related experience section */
+            .detail h3 {
+                margin-top: 10px;
+                font-size: 16px;
+            }
+
+            /* Apply styles for the paragraphs in the job-related experience section */
+            .detail p {
+                margin-bottom: 15px;
+                font-size: 16px;
+            }
+
+            .labee {
+                font-size: 16px;
+                margin-top: 20px;
+            }
+
+            .job-re {
+                margin-bottom: 10px;
+            }
+
             .card {
                 margin-left: 1rem;
                 margin-right: 2rem;
@@ -13049,14 +13151,12 @@
                 margin-bottom: 1.5rem;
                 flex: 1 1 0%;
                 color: rgba(156, 163, 175, 1);
-                margin-top: ;
             }
 
             .lists .list {
                 margin-bottom: 0.5rem;
                 display: flex;
-                margin-left: 0.5rem;
-                margin-top: 0.5rem;
+                margin-left: 0.5rem
             }
 
             .lists .list svg {
@@ -13065,7 +13165,7 @@
                 flex-shrink: 0;
                 margin-right: 0.5rem;
                 color: rgb(255, 255, 255);
-                margin-bottom: 0.5rem;
+                margin-bottom: 0.05rem;
             }
 
             .action {
@@ -13085,26 +13185,52 @@
             }
 
             .cards-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 20px;
-        }
+                display: flex;
+            }
 
             .action:hover {
                 background-color: white;
                 /* Hover color */
                 color: rgba(17, 24, 39, 1);
             }
-            .hidden{
-        display: none;
-    }
 
-    @media only screen and (min-width: 769px) {
-  body {
-    font-size: 18px; /* Increase font size for larger screens */
-  }
-}
+            button {
+                position: relative;
+                background-color: rgb(230, 34, 77);
+                border-radius: 5px;
+                box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+                padding: 15px;
+                background-repeat: no-repeat;
+                cursor: pointer;
+                box-sizing: border-box;
+                width: 154px;
+                height: 49px;
+                color: #fff;
+                border: none;
+                font-size: 20px;
+                transition: all 0.3s ease-in-out;
+                z-index: 1;
+                overflow: hidden;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            button::before {
+                content: "";
+                background-color: rgb(248, 50, 93);
+                width: 0;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: width 700ms ease-in-out;
+                display: inline-block;
+            }
+
+            button:hover::before {
+                width: 100%;
+            }
         </style>
     </pages-css>
 
@@ -13365,8 +13491,8 @@
                                                             data-listposition="center" data-data-id="dataItem-lirzwy7y1"
                                                             data-state="menu false  link" data-index="2"
                                                             class="rqt3qI wixui-dropdown-menu__item vDnwi4"><a
-                                                                data-testid="linkElement" href="industries.html" target="_self"
-                                                                class="lY3Nwh" aria-haspopup="false">
+                                                                data-testid="linkElement" href="industries.html"
+                                                                target="_self" class="lY3Nwh" aria-haspopup="false">
                                                                 <div class="rBTT56">
                                                                     <div class="" style="text-align:left">
                                                                         <p class="foFAdY" style="text-align:left"
@@ -13383,7 +13509,8 @@
                                                                 <div class="rBTT56">
                                                                     <div class="" style="text-align:left">
                                                                         <a href="careers.html">
-                                                                            <p class="foFAdY" style="text-align:left" id="comp-knebed6b3label">Careers</p>
+                                                                            <p class="foFAdY" style="text-align:left"
+                                                                                id="comp-knebed6b3label">Careers</p>
                                                                         </a>
                                                                     </div>
                                                                 </div>
@@ -13455,941 +13582,851 @@
                             </div>
                         </div>
                     </header>
-                    <div class="cards-container">
-                        <div class="card">
-                            <div class="header">
-                                <span class="price">Operation Intern</span>
-                            </div>
-                            <ul class="lists">
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Overview</span>
-                                </li>
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Responsibilities</span>
-                                </li>
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Qualifications & Benefits</span>
-                                </li>
-                            </ul>
-                            <a href="operation.html">
-                                <button type="button" class="action">Learn More</button>
-                            </a>
+
+                    <div class="job-description">
+                        <div class="apply-btn"><a data-testid="linkElement" href="" target="_self"
+                                class="kuTaGy wixui-button zKbzSQ" aria-disabled="false"><span
+                                    class="M3I7Z2 wixui-button__label"></span></a>
 
                         </div>
 
-                        <div class="card">
-                            <div class="header">
-                                <span class="price">Marketing Intern</span>
-                            </div>
-                            <ul class="lists">
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Overview</span>
-                                </li>
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Responsibilities</span>
-                                </li>
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Qualifications & Benefits</span>
-                                </li>
-                            </ul>
-                            <a href="marketing.html">
-                                <button type="button" class="action">Learn More</button>
-                            </a>
 
-                        </div>
+                        <button id="buttonLink" onclick="window.location.href='apply-rep.html'">Apply Now</button>
 
-                        <div class="card">
-                            <div class="header">
-                                <span class="price">Merchant Account Manager</span>
-                            </div>
-                            <ul class="lists">
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Overview</span>
-                                </li>
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Responsibilities</span>
-                                </li>
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Qualifications & Benefits</span>
-                                </li>
-                            </ul>
-                            <a href="merchant-manager.html">
-                                <button type="button" class="action">Learn More</button>
-                            </a>
-                        </div>
 
-                        <div class="card">
-                            <div class="header">
-                                <span class="price">Customer Support Rep</span>
-                            </div>
-                            <ul class="lists">
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Overview</span>
-                                </li>
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Responsibilities</span>
-                                </li>
-                                <li class="list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span>Qualifications & Benefits</span>
-                                </li>
-                            </ul>
-                            <a href="customer-rep.html">
-                                <button type="button" class="action">Learn More</button>
-                            </a>
-                        </div>
-
-                        <div class="hidden">
-                            <div class="card">
-                                <div class="header">
-                                    <span class="price">Merchant Account Manager</span>
+                        <section>
+                            <h2>
+                                <div class="label">Overview</div>
+                            </h2>
+                            <div>
+                                <div itemprop="description1" class="detail field-overview js-excerpt">
+                                    <p>We need individuals who shine in client interactions! This Role will frequently need you to engage in meaningful conversations with both new and existing customers. We're looking for someone proactive, trustworthy, compassionate, and patient who can handle difficult customer circumstances and turn a bad experience into a good one. You should be able to communicate effectively and collaborate with both the internal organization (team) and external customers. In addition to customer service, this position provides numerous prospects for advancement throughout the company.</p>
                                 </div>
-                                <ul class="lists">
-                                    <li class="list">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Overview</span>
-                                    </li>
-                                    <li class="list">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Responsibilities</span>
-                                    </li>
-                                    <li class="list">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Qualifications & Benefits</span>
-                                    </li>
-                                </ul>
-                                <a href="merchant-manager.html">
-                                    <button type="button" class="action">Learn MOre</button>
-                                </a>
                             </div>
-                            <div class="card">
-                                <div class="header">
-                                    <span class="price">Finance Intern</span>
+                        </section>
+
+                        <section>
+                            <h2>
+                                <div class="label">Responsibilities</div>
+                            </h2>
+                            <div>
+                                <div class="detail field-responsibilities js-excerpt" itemprop="responsibilities">
+                                    <ul>
+                                        <li>Communicate with customers using phone, email, and chat.</li>
+                                        <li>Execute inbound and outbound calls to customers to provide support and help.</li>
+                                        <li>Analyze client needs and offer relevant solutions.</li>
+                                        <li>Resolve client complaints or difficulties promptly and professionally.</li>
+                                        <li>Maintain accurate records of customer interactions and transactions.</li>
+                                        <li>Collaborate with teammates to ensure customer satisfaction.</li>
+                                        <li>Notify the customer and designated personnel of any findings, adjustments, or recommendations, such as a monetary return, credit to the client's account, or bill adjustment.</li>
+                                        <li>Update and maintain the client database with accurate information and timely data entry.</li>
+                                        <li>Positively reflect our brand in all written and verbal contacts and correspondence.</li>
+                                      </ul>
+                                    <p>This job description is not designed to cover or contain a comprehensive listing
+                                        of activities, duties or responsibilities that are required of the employee for
+                                        this job. Duties, responsibilities, and activities may change at any time with
+                                        or without notice.</p>
                                 </div>
-                                <ul class="lists">
-                                    <li class="list">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Overview</span>
-                                    </li>
-                                    <li class="list">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Responsibilities</span>
-                                    </li>
-                                    <li class="list">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>Qualifications & Benefits</span>
-                                    </li>
-                                </ul>
-                                <a href="your-link-here">
-                                    <button type="button" class="action">Learn More</button>
-                                </a>
+                            </div>
+                        </section>
+
+                        <section>
+                            <h2>
+                                <div class="label">Requirements</div>
+                            </h2>
+                            <ul class="qualification-list">
+                                <li>Currently enrolled in a high school program or equivalent: Actively pursuing a high school diploma or equivalent educational qualification.</li>
+                            </ul>
+                            <div itemprop="qualifications" class="detail field-qualifications js-excerpt">
+                                <div class="job-re">
+                                    <h3>Job-related experience</h3>
+                                </div>
+                                <ul>
+                                    <li>Prior customer service experience is preferred, but if you want to deliver the best possible experience for our clients, we will train you!</li>
+                                    <li>Excellent verbal and written communication skills.</li>
+                                    <li>Strong problem-solving and analytical skills.</li>
+                                    <li>Ability to deal with difficult or upset clients with tolerance and professionalism.</li>
+                                    <li>High school diploma or equivalent is required.</li>
+                                    <li>Ability to establish client relationships and offer customer service.</li>
+                                    <li>Ability to manage and resolve escalated customer service concerns.</li>
+                                    <li>Conflict resolution abilities.</li>
+                                    <li>Attention to detail and accuracy.</li>
+                                    <li>Written and verbal communication skills.</li>
+                                    <li>Computer skills with Microsoft Office software (Word, Excel, Outlook, and PowerPoint).</li>
+                                    <li>Time management skills.</li>
+                                    <li>Ability to prioritize, organize, and perform numerous tasks.</li>
+                                </li>Must be a citizen of the United States.</li>
+                            </ul>
+                            <h3>Job-Type</h3>
+                            <ul>
+                                <li>Remote</li>
+                            </ul>
+                            <strong>
+                                <h3>Job-related skills/competencies</h3>
+                            </strong>
+                            <ul>
+                                <li>Excellent problem-solving and analytical skills.</li>
+                                <li>Proficient in MS-Excel, PowerPoint, and Word.</li>
+                                <li>Effective communication and interpersonal skills.</li>
+                                <li>Effective time management skills.</li>
+                            </ul>
+                    </div>
+                        <h2>
+                            <div class="label">Benefits</div>
+                        </h2>
+                        <div class="labee">
+                            <p>Pay offered to a successful candidate will be based on several factors including the
+                                candidate's education, previous work experience, specific job duties, certifications,
+                                etc.</p>
+
+                        </div>
+                        <ul class="benefits-list">
+                            <li>Complete medical, dental, vision and life insurance coverage, Flexible Spending Accounts and wellness programs.</li>
+                            <li>401(k) with 6% employer match.</li>
+                            <li>Paid holidays and generous paid time off.</li>
+                            <li>Tuition Assistance Program that covers professional continuing education.</li>
+                            <li>Bonus programs that include annual performance, sales goals and profit sharing.</li>                      
+                        </ul>
+
+                        <div class="labee">
+                            <p><em>*This is a fully remote, work from home position. You will be provided equipment like computer, headset, etc. Training is paid.</em></p>
+                            <p><strong>Pay:</strong> From $23.00 per hour</p>
+                            <p><strong>Hours:</strong> Full time, Monday - Friday, 8 AM to 4:30 PM.</p>
+                            <p>If you are a motivated individual with a passion for providing excellent customer service, we want to hear from you! Join our team as a Customer Support Representative and help us provide exceptional service to our valued clients. Apply today!</p>
+                         
+                        </div>
+                        <div class="labee">
+                            <p>This job requires access to confidential and critical information, requiring ongoing
+                                discretion and secure information management.</p>
+                            <p>
+                                At Mantra Pay, we celebrate diversity, because we know that our individual strengths
+                                make us stronger together. We welcome and encourage interest from a wide variety of
+                                candidates, and we will give your application consideration, without regard to race,
+                                color, religion, sex, sexual orientation, gender perception or identity, national
+                                origin, age, marital status, protected veteran status, or disability status. At Mantra
+                                Pay, our culture will celebrate individuality, knowing that together we are more.
+                            </p>
+                        </div>
+                        <button id="buttonLink" onclick="window.location.href='apply-rep.html'">Apply Now</button>
+                    </section>
+
+                    <div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <footer class="SITE_FOOTER_WRAPPER" tabindex="-1" id="SITE_FOOTER_WRAPPER">
+                <div id="SITE_FOOTER" class="AT7o0U SITE_FOOTER wixui-footer" tabindex="-1">
+                    <div class="lvxhkV"></div>
+                    <div class="cKxVkc">
+                        <div class="vlM3HR"></div>
+                        <div class="VrZrC0">
+                            <div data-mesh-id="SITE_FOOTERinlineContent" data-testid="inline-content" class="">
+                                <div data-mesh-id="SITE_FOOTERinlineContent-gridContainer"
+                                    data-testid="mesh-container-content">
+                                    <section id="comp-knd73gkl" class="comp-knd73gkl CohWsy wixui-column-strip">
+                                        <div id="bgLayers_comp-knd73gkl" data-hook="bgLayers" class="if7Vw2">
+                                            <div data-testid="colorUnderlay" class="tcElKx i1tH8h"></div>
+                                            <div id="bgMedia_comp-knd73gkl" class="wG8dni"></div>
+                                        </div>
+                                        <div data-testid="columns" class="V5AUxf">
+                                            <div id="comp-knd73glu"
+                                                class="comp-knd73glu YzqVVZ wixui-column-strip__column">
+                                                <div id="bgLayers_comp-knd73glu" data-hook="bgLayers" class="MW5IWV">
+                                                    <div data-testid="colorUnderlay" class="LWbAav Kv1aVt">
+                                                    </div>
+                                                    <div id="bgMedia_comp-knd73glu" class="VgO9Yg"></div>
+                                                </div>
+                                                <div data-mesh-id="comp-knd73gluinlineContent"
+                                                    data-testid="inline-content" class="">
+                                                    <div data-mesh-id="comp-knd73gluinlineContent-gridContainer"
+                                                        data-testid="mesh-container-content">
+                                                        <div id="comp-lfnl0pyc"
+                                                            class="MazNVa comp-lfnl0pyc wixui-image rYiAuL"><a
+                                                                data-testid="linkElement" href="" target="_self"
+                                                                class="j7pOnl"><wow-image id="img_comp-lfnl0pyc"
+                                                                    class="HlRz5e BI8PVQ"
+                                                                    data-image-info="{&quot;containerId&quot;:&quot;comp-lfnl0pyc&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:198,&quot;targetHeight&quot;:58,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:6912,&quot;height&quot;:3456,&quot;uri&quot;:&quot;97c9a7_b765167653a04f0a848c407538ab82bf~mv2.png&quot;,&quot;name&quot;:&quot;Mantra Payments Logo Banner Transparent.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;quality&quot;:{&quot;unsharpMask&quot;:{&quot;radius&quot;:0.66,&quot;amount&quot;:1,&quot;threshold&quot;:0.01}},&quot;crop&quot;:{&quot;x&quot;:439,&quot;y&quot;:982,&quot;width&quot;:6107,&quot;height&quot;:1783,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;}}}"
+                                                                    data-bg-effect-name="" data-has-ssr-src="true"><img
+                                                                        src="https://static.wixstatic.com/media/97c9a7_b765167653a04f0a848c407538ab82bf~mv2.png/v1/crop/x_439,y_982,w_6107,h_1783/fill/w_198,h_58,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_auto/Mantra%20Payments%20Logo%20Banner%20Transparent.png"
+                                                                        alt="Mantra Payments - Credit Card Processing"
+                                                                        style="width:100%;height:100%;object-fit:cover;object-position:50% 50%"
+                                                                        width="198" height="58" /></wow-image></a></div>
+                                                        <div id="comp-lhfuhf5k"
+                                                            class="KcpHeO tz5f0K comp-lhfuhf5k wixui-rich-text"
+                                                            data-testid="richTextElement">
+                                                            <h3 class="font_3 wixui-rich-text__text"
+                                                                style="font-size:16px; text-align:center;"><span
+                                                                    style="font-weight:normal;"
+                                                                    class="wixui-rich-text__text"><span
+                                                                        style="font-family:avenir-lt-w01_85-heavy1475544,avenir-lt-w05_85-heavy,sans-serif;"
+                                                                        class="wixui-rich-text__text"><span
+                                                                            class="color_11 wixui-rich-text__text"><span
+                                                                                style="font-size:16px;"
+                                                                                class="wixui-rich-text__text">Sales<br
+                                                                                    class="wixui-rich-text__text">
+                                                                                <a href="tel:+1-858-704-2445"
+                                                                                    class="wixui-rich-text__text">(656)
+                                                                                    565-8121</a></span></span></span></span>
+                                                            </h3>
+                                                        </div>
+                                                        <div id="comp-lhfui425"
+                                                            class="KcpHeO tz5f0K comp-lhfui425 wixui-rich-text"
+                                                            data-testid="richTextElement">
+                                                            <h3 class="font_3 wixui-rich-text__text"
+                                                                style="font-size:16px; text-align:center;"><span
+                                                                    style="font-family:avenir-lt-w01_85-heavy1475544,avenir-lt-w05_85-heavy,sans-serif;"
+                                                                    class="wixui-rich-text__text"><span
+                                                                        style="font-weight:normal;"
+                                                                        class="wixui-rich-text__text"><span
+                                                                            class="color_11 wixui-rich-text__text"><span
+                                                                                style="font-size:16px;"
+                                                                                class="wixui-rich-text__text">Terminal
+                                                                                Support<br
+                                                                                    class="wixui-rich-text__text">
+                                                                                (781)
+                                                                                832-0705</span></span></span></span>
+                                                            </h3>
+                                                        </div>
+                                                        <div id="comp-lfkm8tqq"
+                                                            class="KcpHeO tz5f0K comp-lfkm8tqq wixui-rich-text"
+                                                            data-testid="richTextElement">
+                                                            <p class="font_8 wixui-rich-text__text"
+                                                                style="font-size:8px; line-height:1.2em; text-align:center;">
+                                                                <span
+                                                                    style="font-family:avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;"
+                                                                    class="wixui-rich-text__text"><span
+                                                                        class="color_11 wixui-rich-text__text"><span
+                                                                            style="font-size:8px;"
+                                                                            class="wixui-rich-text__text">Mantra
+                                                                            Payment is an Independent Sales
+                                                                            Agent and &nbsp;is a Registered
+                                                                            Partner/ISO of CardConnect.&nbsp;
+                                                                            CardConnect is an ISO of Wells Fargo
+                                                                            Bank, N.A., Concord, CA., Synovus
+                                                                            Bank, USA, Columbus, GA, PNC Bank,
+                                                                            N.A., Pittsburgh, PA and Pathward,
+                                                                            N.A., Sioux Falls, SD. The
+                                                                            Clover&reg; trademark and logo are
+                                                                            owned by Clover&reg; Network, Inc.,
+                                                                            a Fiserv company. EMV&reg; is a
+                                                                            registered trademark in the U.S. and
+                                                                            in other countries, owned by EMVCo,
+                                                                            LLC. Apple Pay&reg;, Apple, the
+                                                                            Apple logo are trademarks of Apple
+                                                                            Inc., registered in the U.S. and
+                                                                            other countries. All other
+                                                                            trademarks, service marks and trade
+                                                                            names referenced in this material
+                                                                            are the property of their respective
+                                                                            owners.&nbsp;</span></span></span>
+                                                            </p>
+                                                        </div>
+                                                        <div id="comp-knd74j8z"
+                                                            class="KcpHeO tz5f0K comp-knd74j8z wixui-rich-text"
+                                                            data-testid="richTextElement">
+                                                            <p class="font_7 wixui-rich-text__text"
+                                                                style="text-align:center; font-size:12px;"><span
+                                                                    class="color_11 wixui-rich-text__text"><span
+                                                                        style="font-size:12px;"
+                                                                        class="wixui-rich-text__text"><span
+                                                                            style="font-family:avenir-lt-w01_85-heavy1475544,avenir-lt-w05_85-heavy,sans-serif;"
+                                                                            class="wixui-rich-text__text">&copy;
+                                                                            2023 Mantra Payments. All Rights
+                                                                            Reserved.</span></span></span></p>
+                                                        </div>
+                                                        <div id="comp-le3unmgx"
+                                                            class="KcpHeO tz5f0K comp-le3unmgx wixui-rich-text"
+                                                            data-testid="richTextElement">
+                                                            <p class="font_8 wixui-rich-text__text"
+                                                                style="font-size:12px;"><span
+                                                                    style="font-family:avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;"
+                                                                    class="wixui-rich-text__text"><span
+                                                                        class="color_11 wixui-rich-text__text"><span
+                                                                            style="font-size:12px;"
+                                                                            class="wixui-rich-text__text"><a
+                                                                                href="privacy-policy.html"
+                                                                                target="_self"
+                                                                                class="wixui-rich-text__text">Privacy
+                                                                                Policy&nbsp;</a> |&nbsp; <a
+                                                                                href="terms-of-use.html" target="_self"
+                                                                                class="wixui-rich-text__text">Terms
+                                                                                of Use</a>&nbsp; |&nbsp; <a
+                                                                                href="disclaimer.html" target="_self"
+                                                                                class="wixui-rich-text__text">Disclaimer</a>
+                                                                            &nbsp;</span></span></span></p>
+                                                        </div>
+                                                        <div id="comp-lgvufj0d" class=" ">
+                                                            <div class="comp-lgvufj0d">
+                                                                <style>
+                                                                    .Modal1071601439--backdrop {
+                                                                        position: fixed;
+                                                                        z-index: 4000;
+                                                                        left: 0;
+                                                                        top: 0;
+                                                                        width: 100%;
+                                                                        height: 100%;
+                                                                        overflow: auto;
+                                                                        background-color: rgba(22, 45, 61);
+                                                                        background-color: rgba(22, 45, 61, .66)
+                                                                    }
+
+                                                                    .Modal1071601439--modal {
+                                                                        position: fixed;
+                                                                        top: 50%;
+                                                                        left: 50%;
+                                                                        transform: translate(-50%, -50%);
+                                                                        background-color: #fff;
+                                                                        width: 600px;
+                                                                        max-width: 100%
+                                                                    }
+
+                                                                    .Modal1071601439--modal.Modal1071601439--mobile {
+                                                                        width: 90%
+                                                                    }
+
+                                                                    .Modal1071601439--modal.Modal1071601439--mobile.Modal1071601439--preview {
+                                                                        max-width: 300px;
+                                                                        width: 90%
+                                                                    }
+
+                                                                    .Modal1071601439--modalHeader {
+                                                                        text-align: right
+                                                                    }
+
+                                                                    .Modal1071601439--modalTitle {
+                                                                        text-align: center;
+                                                                        width: 80%;
+                                                                        margin: 0 auto
+                                                                    }
+
+                                                                    .Modal1071601439--modalText {
+                                                                        text-align: center;
+                                                                        width: 80%;
+                                                                        margin: 24px auto
+                                                                    }
+
+                                                                    .Modal1071601439--modalButtons {
+                                                                        text-align: center
+                                                                    }
+
+                                                                    .Modal1071601439--button {
+                                                                        margin: 20px 20px 80px
+                                                                    }
+
+                                                                    .Modal1071601439--mobile .Modal1071601439--button {
+                                                                        margin: 3px 3px 20px
+                                                                    }
+
+                                                                    .Modal1071601439--close {
+                                                                        margin: 24px;
+                                                                        cursor: pointer
+                                                                    }
+
+                                                                    .Modal1071601439--loader {
+                                                                        position: fixed;
+                                                                        top: 50%;
+                                                                        left: 50%;
+                                                                        transform: translate(-50%, -50%);
+                                                                        width: 30px;
+                                                                        height: 30px
+                                                                    }
+
+
+                                                                    .Focusable3506766611--focus-box {
+                                                                        outline: 0
+                                                                    }
+
+                                                                    .Focusable3506766611--focus-box-error {
+                                                                        outline: 0
+                                                                    }
+
+
+                                                                    .buttonnext3269183541--root {
+                                                                        display: inline-flex;
+                                                                        align-items: center;
+                                                                        cursor: pointer
+                                                                    }
+
+                                                                    .buttonnext3269183541--prefix {
+                                                                        flex-shrink: 0
+                                                                    }
+
+                                                                    .buttonnext3269183541--suffix {
+                                                                        flex-shrink: 0
+                                                                    }
+
+                                                                    .buttonnext3269183541--root[data-buttonnext3269183541-disabled] {
+                                                                        cursor: default
+                                                                    }
+
+                                                                    .buttonnext3269183541--root[disabled] {
+                                                                        pointer-events: none
+                                                                    }
+
+
+                                                                    .Button1081927827--root {
+                                                                        min-width: 100px;
+                                                                        border-style: solid;
+                                                                        box-sizing: content-box;
+                                                                        border-radius: 0;
+                                                                        transition: background-color .2s ease-in-out, border-color .2s ease-in-out, color .2s ease-in-out
+                                                                    }
+
+                                                                    .Button1081927827--root .buttonnext3269183541--content {
+                                                                        margin: 0 auto;
+                                                                        text-overflow: ellipsis;
+                                                                        white-space: nowrap;
+                                                                        overflow: hidden
+                                                                    }
+
+                                                                    .Button1081927827--root[data-button1081927827-fullwidth] {
+                                                                        width: 100%;
+                                                                        box-sizing: border-box
+                                                                    }
+
+                                                                    .Button1081927827--root[data-button1081927827-size=tiny] {
+                                                                        padding: 6px 16px
+                                                                    }
+
+                                                                    .Button1081927827--root[data-button1081927827-size=small] {
+                                                                        padding: 7px 16px
+                                                                    }
+
+                                                                    .Button1081927827--root[data-button1081927827-size=medium] {
+                                                                        padding: 8px 16px
+                                                                    }
+
+                                                                    .Button1081927827--root[data-button1081927827-mobile][data-button1081927827-size=medium] {
+                                                                        padding: 10px 16px
+                                                                    }
+
+                                                                    .Button1081927827--root[data-button1081927827-size=large] {
+                                                                        padding: 10px 16px
+                                                                    }
+
+                                                                    .Button1081927827--root[data-button1081927827-upgrade] .buttonnext3269183541--content {
+                                                                        overflow: visible;
+                                                                        text-overflow: unset;
+                                                                        white-space: unset
+                                                                    }
+
+                                                                    .Button1081927827--root[data-button1081927827-upgrade] {
+                                                                        box-sizing: border-box;
+                                                                        line-height: 1;
+                                                                        text-overflow: ellipsis;
+                                                                        white-space: nowrap;
+                                                                        overflow: hidden;
+                                                                        display: inline-block
+                                                                    }
+
+                                                                    .Button1081927827--root[data-button1081927827-mobile][data-button1081927827-upgrade] {
+                                                                        line-height: 1
+                                                                    }
+
+                                                                    .Button1081927827--root[data-button1081927827-size=tiny][data-button1081927827-upgrade] {
+                                                                        line-height: 1
+                                                                    }
+
+                                                                    .Button1081927827--root[data-button1081927827-size=small][data-button1081927827-upgrade]:not(mobile) {
+                                                                        line-height: 1
+                                                                    }
+
+                                                                    .Button1081927827--root[data-button1081927827-size=medium][data-button1081927827-upgrade]:not(mobile) {
+                                                                        line-height: 1
+                                                                    }
+
+                                                                    .Button1081927827--root[data-button1081927827-size=large][data-button1081927827-upgrade]:not(mobile) {
+                                                                        line-height: 1
+                                                                    }
+
+
+                                                                    .TextButton1946371614--root {
+                                                                        background-color: transparent;
+                                                                        text-decoration: none;
+                                                                        border: none;
+                                                                        padding: 0
+                                                                    }
+
+                                                                    .TextButton1946371614--root[data-textbutton1946371614-priority=link] {
+                                                                        text-decoration: underline
+                                                                    }
+
+                                                                    body.js-focus-visible {
+                                                                        margin: 0
+                                                                    }
+                                                                </style>
+                                                                <style>
+                                                                    .comp-lgvufj0d .Modal1071601439--modalTitle {
+                                                                        font: normal normal bold 32px/1.4em montserrat;
+                                                                        text-decoration: ;
+                                                                        color: rgb(255, 255, 255)
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Modal1071601439--modalText {
+                                                                        font: normal normal normal 16px/1.4em avenir-lt-w01_35-light1475496;
+                                                                        text-decoration: ;
+                                                                        color: #000000
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Text765688374--root[data-text765688374-typography=smallTitle] {
+                                                                        color: #000000;
+                                                                        font: normal normal bold 24px/1.33em montserrat, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Text765688374--root[data-text765688374-typography=runningText] {
+                                                                        color: #000000;
+                                                                        font: normal normal normal 16px/1.5em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Text765688374--root[data-text765688374-typography=listText] {
+                                                                        color: #000000;
+                                                                        font: normal normal normal 16px/2em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Text765688374--root[data-text765688374-typography=largeTitle] {
+                                                                        color: #000000;
+                                                                        font: normal normal bold 32px/1.25em avenir-lt-w01_85-heavy1475544, avenir-lt-w05_85-heavy, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Text765688374--root[data-text765688374-mobile][data-text765688374-typography=smallTitle] {
+                                                                        color: #000000;
+                                                                        font: normal normal bold 20px/1.4em montserrat, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Text765688374--root[data-text765688374-mobile][data-text765688374-typography=runningText] {
+                                                                        color: #000000;
+                                                                        font: normal normal normal 14px/1.42em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Text765688374--root[data-text765688374-mobile][data-text765688374-typography=listText] {
+                                                                        color: #000000;
+                                                                        font: normal normal normal 14px/1.72em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Text765688374--root[data-text765688374-mobile][data-text765688374-typography=largeTitle] {
+                                                                        color: #000000;
+                                                                        font: normal normal bold 24px/1.33em avenir-lt-w01_85-heavy1475544, avenir-lt-w05_85-heavy, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root {
+                                                                        border-color: #387780
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic] {
+                                                                        color: #FFFFFF;
+                                                                        background-color: #000000;
+                                                                        border-width: 0px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic]:active,
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic]:hover,
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-focusable3506766611-focus] {
+                                                                        background-color: rgba(0, 0, 0, 0.7);
+                                                                        color: rgba(255, 255, 255, 0.7)
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basicSecondary] {
+                                                                        color: #000000;
+                                                                        background-color: rgba(0, 0, 0, 0);
+                                                                        border-color: #000000;
+                                                                        border-width: 1px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basicSecondary]:active,
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basicSecondary]:hover,
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basicSecondary][data-focusable3506766611-focus] {
+                                                                        color: rgba(0, 0, 0, 0.7);
+                                                                        border-color: rgba(0, 0, 0, 0.7)
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary] {
+                                                                        color: #FFFFFF;
+                                                                        background-color: #387780;
+                                                                        border-width: 0px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary]:active,
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary]:hover,
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-focusable3506766611-focus] {
+                                                                        background-color: rgba(56, 119, 128, 0.7);
+                                                                        color: rgba(255, 255, 255, 0.7)
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=secondary] {
+                                                                        color: #387780;
+                                                                        background-color: rgba(0, 0, 0, 0);
+                                                                        border-color: #387780;
+                                                                        border-width: 1px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=secondary]:active,
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=secondary]:hover,
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=secondary][data-focusable3506766611-focus] {
+                                                                        color: rgba(56, 119, 128, 0.7);
+                                                                        border-color: rgba(56, 119, 128, 0.7)
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-buttonnext3269183541-disabled],
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-buttonnext3269183541-disabled] {
+                                                                        background-color: #C7C7C7
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basicSecondary][data-buttonnext3269183541-disabled],
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=secondary][data-buttonnext3269183541-disabled] {
+                                                                        color: #C7C7C7;
+                                                                        border-color: #C7C7C7
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=tiny] {
+                                                                        font: normal normal normal 14px/1.43em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=small] {
+                                                                        font: normal normal normal 16px/1.5em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=medium] {
+                                                                        font: normal normal normal 16px/1.5em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-mobile][data-button1081927827-size=medium] {
+                                                                        font: normal normal normal 14px/1.44em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=large] {
+                                                                        font: normal normal normal 20px/1.5em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-mobile][data-button1081927827-upgrade] {
+                                                                        font: normal normal normal 14px/1 avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=tiny][data-button1081927827-upgrade] {
+                                                                        font: normal normal normal 14px/1 avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basicSecondary][data-button1081927827-upgrade][data-button1081927827-size=tiny],
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=secondary][data-button1081927827-upgrade][data-button1081927827-size=tiny] {
+                                                                        padding: calc(9px - 1px) 16px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-button1081927827-upgrade][data-button1081927827-size=tiny],
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-button1081927827-upgrade][data-button1081927827-size=tiny] {
+                                                                        padding: calc(9px - 0px) 16px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=small][data-button1081927827-upgrade]:not(mobile) {
+                                                                        font: normal normal normal 16px/1 avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-upgrade][data-button1081927827-priority=basicSecondary][data-button1081927827-size=small],
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-upgrade][data-button1081927827-priority=secondary][data-button1081927827-size=small] {
+                                                                        padding: calc(10px - 1px) 16px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-button1081927827-upgrade][data-button1081927827-size=small],
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-button1081927827-upgrade][data-button1081927827-size=small] {
+                                                                        padding: calc(10px - 0px) 16px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-upgrade][data-button1081927827-priority=basicSecondary][data-button1081927827-size=small][data-button1081927827-mobile],
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-upgrade][data-button1081927827-priority=secondary][data-button1081927827-size=small][data-button1081927827-mobile] {
+                                                                        padding: calc(11px - 1px) 16px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-button1081927827-upgrade][data-button1081927827-size=small][data-button1081927827-mobile],
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-button1081927827-upgrade][data-button1081927827-size=small][data-button1081927827-mobile] {
+                                                                        padding: calc(11px - 0px) 16px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=medium][data-button1081927827-upgrade]:not(mobile) {
+                                                                        font: normal normal normal 16px/1 avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-upgrade][data-button1081927827-priority=basicSecondary][data-button1081927827-size=medium],
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-upgrade][data-button1081927827-priority=secondary][data-button1081927827-size=medium] {
+                                                                        padding: calc(12px - 1px) 16px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-button1081927827-upgrade][data-button1081927827-size=medium],
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-button1081927827-upgrade][data-button1081927827-size=medium] {
+                                                                        padding: calc(12px - 0px) 16px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-upgrade][data-button1081927827-priority=basicSecondary][data-button1081927827-size=medium][data-button1081927827-mobile],
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-upgrade][data-button1081927827-priority=secondary][data-button1081927827-size=medium][data-button1081927827-mobile] {
+                                                                        padding: calc(13px - 1px) 16px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-button1081927827-upgrade][data-button1081927827-size=medium][data-button1081927827-mobile],
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-button1081927827-upgrade][data-button1081927827-size=medium][data-button1081927827-mobile] {
+                                                                        padding: calc(13px - 0px) 16px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=large][data-button1081927827-upgrade]:not(mobile) {
+                                                                        font: normal normal normal 16px/1 avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=large][data-button1081927827-upgrade][data-button1081927827-priority=basicSecondary],
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=large][data-button1081927827-upgrade][data-button1081927827-priority=secondary] {
+                                                                        padding: calc(16px - 1px) 16px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-button1081927827-upgrade][data-button1081927827-size=large],
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-button1081927827-upgrade][data-button1081927827-size=large] {
+                                                                        padding: calc(16px - 0px) 16px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=large][data-button1081927827-upgrade][data-button1081927827-priority=basicSecondary][data-button1081927827-mobile],
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=large][data-button1081927827-upgrade][data-button1081927827-priority=secondary][data-button1081927827-mobile] {
+                                                                        padding: calc(17px - 1px) 16px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-button1081927827-upgrade][data-button1081927827-size=large][data-button1081927827-mobile],
+                                                                    .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-button1081927827-upgrade][data-button1081927827-size=large][data-button1081927827-mobile] {
+                                                                        padding: calc(17px - 1px) 16px
+                                                                    }
+
+                                                                    .comp-lgvufj0d .TextButton1946371614--root {
+                                                                        font: normal normal normal 16px/1.5em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-mobile] {
+                                                                        font: normal normal normal 14px/1.44em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+                                                                        text-decoration:
+                                                                    }
+
+                                                                    .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=primary] {
+                                                                        color: #387780
+                                                                    }
+
+                                                                    .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=primary]:active,
+                                                                    .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=primary]:hover,
+                                                                    .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=primary][data-focusable3506766611-focus] {
+                                                                        color: rgba(56, 119, 128, 0.6)
+                                                                    }
+
+                                                                    .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=secondary] {
+                                                                        color: #000000
+                                                                    }
+
+                                                                    .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=secondary]:active,
+                                                                    .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=secondary]:hover,
+                                                                    .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=secondary][data-focusable3506766611-focus] {
+                                                                        color: rgba(0, 0, 0, 0.6)
+                                                                    }
+
+                                                                    .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=link] {
+                                                                        color: #000000
+                                                                    }
+
+                                                                    .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=link]:active,
+                                                                    .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=link]:hover,
+                                                                    .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=link][data-focusable3506766611-focus] {
+                                                                        color: rgba(0, 0, 0, 0.6)
+                                                                    }
+
+                                                                    .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=link][data-buttonnext3269183541-disabled],
+                                                                    .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=primary][data-buttonnext3269183541-disabled],
+                                                                    .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=secondary][data-buttonnext3269183541-disabled] {
+                                                                        color: #C7C7C7
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Widget1998546280--ccpa .Widget1998546280--link,
+                                                                    .comp-lgvufj0d .Widget1998546280--ccpa .Widget1998546280--text {
+                                                                        font: normal normal normal 12px/1.4em avenir-lt-w01_35-light1475496;
+                                                                        text-decoration: ;
+                                                                        color: rgb(255, 255, 255)
+                                                                    }
+
+                                                                    .comp-lgvufj0d .Widget1998546280--ccpa .Widget1998546280--link:hover {
+                                                                        font: normal normal normal 12px/1.4em avenir-lt-w01_35-light1475496;
+                                                                        text-decoration: ;
+                                                                        color: rgb(255, 255, 255)
+                                                                    }
+                                                                </style><span class="Widget1998546280--ccpa">
+                                                                    <div class="Widget1998546280--root comp-lgvufj0d"
+                                                                        data-hook="DoNotSellMyData-wrapper">
+                                                                        <button data-hook="ccpa-link"
+                                                                            aria-haspopup="dialog"
+                                                                            class="buttonnext3269183541--root Focusable3506766611--root TextButton1946371614--root Widget1998546280--link"
+                                                                            data-textbutton1946371614-priority="link"
+                                                                            type="button" tabindex="0"><span
+                                                                                class="buttonnext3269183541--content">Do
+                                                                                Not Sell My Personal
+                                                                                Information</span></button>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div id="comp-lgvv8njb"
+                                                            class="KcpHeO tz5f0K comp-lgvv8njb wixui-rich-text"
+                                                            data-testid="richTextElement">
+                                                            <p class="font_7 wixui-rich-text__text"
+                                                                style="font-size:10px; text-align:right;"><span
+                                                                    class="color_11 wixui-rich-text__text"><span
+                                                                        style="font-size:10px;"
+                                                                        class="wixui-rich-text__text"><a
+                                                                            href="http://www.steerinteractive.com"
+                                                                            target="_blank" rel="noreferrer noopener"
+                                                                            class="wixui-rich-text__text"><span
+                                                                                style="font-family:avenir-lt-w01_85-heavy1475544,avenir-lt-w05_85-heavy,sans-serif;"
+                                                                                class="wixui-rich-text__text">SITE
+                                                                                BY</span></a></span></span></p>
+                                                        </div>
+                                                        <div id="comp-lgvvanic"
+                                                            class="MazNVa comp-lgvvanic wixui-image rYiAuL"><a
+                                                                data-testid="linkElement"
+                                                                href="http://www.steerinteractive.com" target="_blank"
+                                                                rel="noreferrer noopener" class="j7pOnl"><wow-image
+                                                                    id="img_comp-lgvvanic" class="HlRz5e BI8PVQ"
+                                                                    data-image-info="{&quot;containerId&quot;:&quot;comp-lgvvanic&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:113,&quot;targetHeight&quot;:41,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:6912,&quot;height&quot;:3456,&quot;uri&quot;:&quot;97c9a7_31a5168107f94a28bd0b95abb76ba970~mv2.png&quot;,&quot;name&quot;:&quot;steer-interactive&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;quality&quot;:{&quot;unsharpMask&quot;:{&quot;radius&quot;:0.66,&quot;amount&quot;:1,&quot;threshold&quot;:0.01}},&quot;crop&quot;:{&quot;x&quot;:0,&quot;y&quot;:474,&quot;width&quot;:6912,&quot;height&quot;:2508,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;}}}"
+                                                                    data-bg-effect-name="" data-has-ssr-src="true"><img
+                                                                        src="https://static.wixstatic.com/media/97c9a7_31a5168107f94a28bd0b95abb76ba970~mv2.png/v1/crop/x_0,y_474,w_6912,h_2508/fill/w_113,h_41,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_auto/steer-interactive.png"
+                                                                        alt="steer-interactive"
+                                                                        style="width:100%;height:100%;object-fit:cover;object-position:50% 50%"
+                                                                        width="113" height="41" /></wow-image></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-
-
-                    <footer class="SITE_FOOTER_WRAPPER" tabindex="-1" id="SITE_FOOTER_WRAPPER">
-                        <div id="SITE_FOOTER" class="AT7o0U SITE_FOOTER wixui-footer" tabindex="-1">
-                            <div class="lvxhkV"></div>
-                            <div class="cKxVkc">
-                                <div class="vlM3HR"></div>
-                                <div class="VrZrC0">
-                                    <div data-mesh-id="SITE_FOOTERinlineContent" data-testid="inline-content" class="">
-                                        <div data-mesh-id="SITE_FOOTERinlineContent-gridContainer"
-                                            data-testid="mesh-container-content">
-                                            <section id="comp-knd73gkl" class="comp-knd73gkl CohWsy wixui-column-strip">
-                                                <div id="bgLayers_comp-knd73gkl" data-hook="bgLayers" class="if7Vw2">
-                                                    <div data-testid="colorUnderlay" class="tcElKx i1tH8h"></div>
-                                                    <div id="bgMedia_comp-knd73gkl" class="wG8dni"></div>
-                                                </div>
-                                                <div data-testid="columns" class="V5AUxf">
-                                                    <div id="comp-knd73glu"
-                                                        class="comp-knd73glu YzqVVZ wixui-column-strip__column">
-                                                        <div id="bgLayers_comp-knd73glu" data-hook="bgLayers"
-                                                            class="MW5IWV">
-                                                            <div data-testid="colorUnderlay" class="LWbAav Kv1aVt">
-                                                            </div>
-                                                            <div id="bgMedia_comp-knd73glu" class="VgO9Yg"></div>
-                                                        </div>
-                                                        <div data-mesh-id="comp-knd73gluinlineContent"
-                                                            data-testid="inline-content" class="">
-                                                            <div data-mesh-id="comp-knd73gluinlineContent-gridContainer"
-                                                                data-testid="mesh-container-content">
-                                                                <div id="comp-lfnl0pyc"
-                                                                    class="MazNVa comp-lfnl0pyc wixui-image rYiAuL"><a
-                                                                        data-testid="linkElement" href="" target="_self"
-                                                                        class="j7pOnl"><wow-image id="img_comp-lfnl0pyc"
-                                                                            class="HlRz5e BI8PVQ"
-                                                                            data-image-info="{&quot;containerId&quot;:&quot;comp-lfnl0pyc&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:198,&quot;targetHeight&quot;:58,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:6912,&quot;height&quot;:3456,&quot;uri&quot;:&quot;97c9a7_b765167653a04f0a848c407538ab82bf~mv2.png&quot;,&quot;name&quot;:&quot;Mantra Payments Logo Banner Transparent.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;quality&quot;:{&quot;unsharpMask&quot;:{&quot;radius&quot;:0.66,&quot;amount&quot;:1,&quot;threshold&quot;:0.01}},&quot;crop&quot;:{&quot;x&quot;:439,&quot;y&quot;:982,&quot;width&quot;:6107,&quot;height&quot;:1783,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;}}}"
-                                                                            data-bg-effect-name=""
-                                                                            data-has-ssr-src="true"><img
-                                                                                src="https://static.wixstatic.com/media/97c9a7_b765167653a04f0a848c407538ab82bf~mv2.png/v1/crop/x_439,y_982,w_6107,h_1783/fill/w_198,h_58,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_auto/Mantra%20Payments%20Logo%20Banner%20Transparent.png"
-                                                                                alt="Mantra Payments - Credit Card Processing"
-                                                                                style="width:100%;height:100%;object-fit:cover;object-position:50% 50%"
-                                                                                width="198"
-                                                                                height="58" /></wow-image></a></div>
-                                                                <div id="comp-lhfuhf5k"
-                                                                    class="KcpHeO tz5f0K comp-lhfuhf5k wixui-rich-text"
-                                                                    data-testid="richTextElement">
-                                                                    <h3 class="font_3 wixui-rich-text__text"
-                                                                        style="font-size:16px; text-align:center;"><span
-                                                                            style="font-weight:normal;"
-                                                                            class="wixui-rich-text__text"><span
-                                                                                style="font-family:avenir-lt-w01_85-heavy1475544,avenir-lt-w05_85-heavy,sans-serif;"
-                                                                                class="wixui-rich-text__text"><span
-                                                                                    class="color_11 wixui-rich-text__text"><span
-                                                                                        style="font-size:16px;"
-                                                                                        class="wixui-rich-text__text">Sales<br
-                                                                                            class="wixui-rich-text__text">
-                                                                                        <a href="tel:+1-858-704-2445"
-                                                                                            class="wixui-rich-text__text">(656)
-                                                                                            565-8121</a></span></span></span></span>
-                                                                    </h3>
-                                                                </div>
-                                                                <div id="comp-lhfui425"
-                                                                    class="KcpHeO tz5f0K comp-lhfui425 wixui-rich-text"
-                                                                    data-testid="richTextElement">
-                                                                    <h3 class="font_3 wixui-rich-text__text"
-                                                                        style="font-size:16px; text-align:center;"><span
-                                                                            style="font-family:avenir-lt-w01_85-heavy1475544,avenir-lt-w05_85-heavy,sans-serif;"
-                                                                            class="wixui-rich-text__text"><span
-                                                                                style="font-weight:normal;"
-                                                                                class="wixui-rich-text__text"><span
-                                                                                    class="color_11 wixui-rich-text__text"><span
-                                                                                        style="font-size:16px;"
-                                                                                        class="wixui-rich-text__text">Terminal
-                                                                                        Support<br
-                                                                                            class="wixui-rich-text__text">
-                                                                                        (781)
-                                                                                        832-0705</span></span></span></span>
-                                                                    </h3>
-                                                                </div>
-                                                                <div id="comp-lfkm8tqq"
-                                                                    class="KcpHeO tz5f0K comp-lfkm8tqq wixui-rich-text"
-                                                                    data-testid="richTextElement">
-                                                                    <p class="font_8 wixui-rich-text__text"
-                                                                        style="font-size:8px; line-height:1.2em; text-align:center;">
-                                                                        <span
-                                                                            style="font-family:avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;"
-                                                                            class="wixui-rich-text__text"><span
-                                                                                class="color_11 wixui-rich-text__text"><span
-                                                                                    style="font-size:8px;"
-                                                                                    class="wixui-rich-text__text">Mantra
-                                                                                    Payment is an Independent Sales
-                                                                                    Agent and &nbsp;is a Registered
-                                                                                    Partner/ISO of CardConnect.&nbsp;
-                                                                                    CardConnect is an ISO of Wells Fargo
-                                                                                    Bank, N.A., Concord, CA., Synovus
-                                                                                    Bank, USA, Columbus, GA, PNC Bank,
-                                                                                    N.A., Pittsburgh, PA and Pathward,
-                                                                                    N.A., Sioux Falls, SD. The
-                                                                                    Clover&reg; trademark and logo are
-                                                                                    owned by Clover&reg; Network, Inc.,
-                                                                                    a Fiserv company. EMV&reg; is a
-                                                                                    registered trademark in the U.S. and
-                                                                                    in other countries, owned by EMVCo,
-                                                                                    LLC. Apple Pay&reg;, Apple, the
-                                                                                    Apple logo are trademarks of Apple
-                                                                                    Inc., registered in the U.S. and
-                                                                                    other countries. All other
-                                                                                    trademarks, service marks and trade
-                                                                                    names referenced in this material
-                                                                                    are the property of their respective
-                                                                                    owners.&nbsp;</span></span></span>
-                                                                    </p>
-                                                                </div>
-                                                                <div id="comp-knd74j8z"
-                                                                    class="KcpHeO tz5f0K comp-knd74j8z wixui-rich-text"
-                                                                    data-testid="richTextElement">
-                                                                    <p class="font_7 wixui-rich-text__text"
-                                                                        style="text-align:center; font-size:12px;"><span
-                                                                            class="color_11 wixui-rich-text__text"><span
-                                                                                style="font-size:12px;"
-                                                                                class="wixui-rich-text__text"><span
-                                                                                    style="font-family:avenir-lt-w01_85-heavy1475544,avenir-lt-w05_85-heavy,sans-serif;"
-                                                                                    class="wixui-rich-text__text">&copy;
-                                                                                    2023 Mantra Payments. All Rights
-                                                                                    Reserved.</span></span></span></p>
-                                                                </div>
-                                                                <div id="comp-le3unmgx"
-                                                                    class="KcpHeO tz5f0K comp-le3unmgx wixui-rich-text"
-                                                                    data-testid="richTextElement">
-                                                                    <p class="font_8 wixui-rich-text__text"
-                                                                        style="font-size:12px;"><span
-                                                                            style="font-family:avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;"
-                                                                            class="wixui-rich-text__text"><span
-                                                                                class="color_11 wixui-rich-text__text"><span
-                                                                                    style="font-size:12px;"
-                                                                                    class="wixui-rich-text__text"><a
-                                                                                        href="privacy-policy.html"
-                                                                                        target="_self"
-                                                                                        class="wixui-rich-text__text">Privacy
-                                                                                        Policy&nbsp;</a> |&nbsp; <a
-                                                                                        href="terms-of-use.html"
-                                                                                        target="_self"
-                                                                                        class="wixui-rich-text__text">Terms
-                                                                                        of Use</a>&nbsp; |&nbsp; <a
-                                                                                        href="disclaimer.html"
-                                                                                        target="_self"
-                                                                                        class="wixui-rich-text__text">Disclaimer</a>
-                                                                                    &nbsp;</span></span></span></p>
-                                                                </div>
-                                                                <div id="comp-lgvufj0d" class=" ">
-                                                                    <div class="comp-lgvufj0d">
-                                                                        <style>
-                                                                            .Modal1071601439--backdrop {
-                                                                                position: fixed;
-                                                                                z-index: 4000;
-                                                                                left: 0;
-                                                                                top: 0;
-                                                                                width: 100%;
-                                                                                height: 100%;
-                                                                                overflow: auto;
-                                                                                background-color: rgba(22, 45, 61);
-                                                                                background-color: rgba(22, 45, 61, .66)
-                                                                            }
-
-                                                                            .Modal1071601439--modal {
-                                                                                position: fixed;
-                                                                                top: 50%;
-                                                                                left: 50%;
-                                                                                transform: translate(-50%, -50%);
-                                                                                background-color: #fff;
-                                                                                width: 600px;
-                                                                                max-width: 100%
-                                                                            }
-
-                                                                            .Modal1071601439--modal.Modal1071601439--mobile {
-                                                                                width: 90%
-                                                                            }
-
-                                                                            .Modal1071601439--modal.Modal1071601439--mobile.Modal1071601439--preview {
-                                                                                max-width: 300px;
-                                                                                width: 90%
-                                                                            }
-
-                                                                            .Modal1071601439--modalHeader {
-                                                                                text-align: right
-                                                                            }
-
-                                                                            .Modal1071601439--modalTitle {
-                                                                                text-align: center;
-                                                                                width: 80%;
-                                                                                margin: 0 auto
-                                                                            }
-
-                                                                            .Modal1071601439--modalText {
-                                                                                text-align: center;
-                                                                                width: 80%;
-                                                                                margin: 24px auto
-                                                                            }
-
-                                                                            .Modal1071601439--modalButtons {
-                                                                                text-align: center
-                                                                            }
-
-                                                                            .Modal1071601439--button {
-                                                                                margin: 20px 20px 80px
-                                                                            }
-
-                                                                            .Modal1071601439--mobile .Modal1071601439--button {
-                                                                                margin: 3px 3px 20px
-                                                                            }
-
-                                                                            .Modal1071601439--close {
-                                                                                margin: 24px;
-                                                                                cursor: pointer
-                                                                            }
-
-                                                                            .Modal1071601439--loader {
-                                                                                position: fixed;
-                                                                                top: 50%;
-                                                                                left: 50%;
-                                                                                transform: translate(-50%, -50%);
-                                                                                width: 30px;
-                                                                                height: 30px
-                                                                            }
-
-
-                                                                            .Focusable3506766611--focus-box {
-                                                                                outline: 0
-                                                                            }
-
-                                                                            .Focusable3506766611--focus-box-error {
-                                                                                outline: 0
-                                                                            }
-
-
-                                                                            .buttonnext3269183541--root {
-                                                                                display: inline-flex;
-                                                                                align-items: center;
-                                                                                cursor: pointer
-                                                                            }
-
-                                                                            .buttonnext3269183541--prefix {
-                                                                                flex-shrink: 0
-                                                                            }
-
-                                                                            .buttonnext3269183541--suffix {
-                                                                                flex-shrink: 0
-                                                                            }
-
-                                                                            .buttonnext3269183541--root[data-buttonnext3269183541-disabled] {
-                                                                                cursor: default
-                                                                            }
-
-                                                                            .buttonnext3269183541--root[disabled] {
-                                                                                pointer-events: none
-                                                                            }
-
-
-                                                                            .Button1081927827--root {
-                                                                                min-width: 100px;
-                                                                                border-style: solid;
-                                                                                box-sizing: content-box;
-                                                                                border-radius: 0;
-                                                                                transition: background-color .2s ease-in-out, border-color .2s ease-in-out, color .2s ease-in-out
-                                                                            }
-
-                                                                            .Button1081927827--root .buttonnext3269183541--content {
-                                                                                margin: 0 auto;
-                                                                                text-overflow: ellipsis;
-                                                                                white-space: nowrap;
-                                                                                overflow: hidden
-                                                                            }
-
-                                                                            .Button1081927827--root[data-button1081927827-fullwidth] {
-                                                                                width: 100%;
-                                                                                box-sizing: border-box
-                                                                            }
-
-                                                                            .Button1081927827--root[data-button1081927827-size=tiny] {
-                                                                                padding: 6px 16px
-                                                                            }
-
-                                                                            .Button1081927827--root[data-button1081927827-size=small] {
-                                                                                padding: 7px 16px
-                                                                            }
-
-                                                                            .Button1081927827--root[data-button1081927827-size=medium] {
-                                                                                padding: 8px 16px
-                                                                            }
-
-                                                                            .Button1081927827--root[data-button1081927827-mobile][data-button1081927827-size=medium] {
-                                                                                padding: 10px 16px
-                                                                            }
-
-                                                                            .Button1081927827--root[data-button1081927827-size=large] {
-                                                                                padding: 10px 16px
-                                                                            }
-
-                                                                            .Button1081927827--root[data-button1081927827-upgrade] .buttonnext3269183541--content {
-                                                                                overflow: visible;
-                                                                                text-overflow: unset;
-                                                                                white-space: unset
-                                                                            }
-
-                                                                            .Button1081927827--root[data-button1081927827-upgrade] {
-                                                                                box-sizing: border-box;
-                                                                                line-height: 1;
-                                                                                text-overflow: ellipsis;
-                                                                                white-space: nowrap;
-                                                                                overflow: hidden;
-                                                                                display: inline-block
-                                                                            }
-
-                                                                            .Button1081927827--root[data-button1081927827-mobile][data-button1081927827-upgrade] {
-                                                                                line-height: 1
-                                                                            }
-
-                                                                            .Button1081927827--root[data-button1081927827-size=tiny][data-button1081927827-upgrade] {
-                                                                                line-height: 1
-                                                                            }
-
-                                                                            .Button1081927827--root[data-button1081927827-size=small][data-button1081927827-upgrade]:not(mobile) {
-                                                                                line-height: 1
-                                                                            }
-
-                                                                            .Button1081927827--root[data-button1081927827-size=medium][data-button1081927827-upgrade]:not(mobile) {
-                                                                                line-height: 1
-                                                                            }
-
-                                                                            .Button1081927827--root[data-button1081927827-size=large][data-button1081927827-upgrade]:not(mobile) {
-                                                                                line-height: 1
-                                                                            }
-
-
-                                                                            .TextButton1946371614--root {
-                                                                                background-color: transparent;
-                                                                                text-decoration: none;
-                                                                                border: none;
-                                                                                padding: 0
-                                                                            }
-
-                                                                            .TextButton1946371614--root[data-textbutton1946371614-priority=link] {
-                                                                                text-decoration: underline
-                                                                            }
-
-                                                                            body.js-focus-visible {
-                                                                                margin: 0
-                                                                            }
-                                                                        </style>
-                                                                        <style>
-                                                                            .comp-lgvufj0d .Modal1071601439--modalTitle {
-                                                                                font: normal normal bold 32px/1.4em montserrat;
-                                                                                text-decoration: ;
-                                                                                color: rgb(255, 255, 255)
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Modal1071601439--modalText {
-                                                                                font: normal normal normal 16px/1.4em avenir-lt-w01_35-light1475496;
-                                                                                text-decoration: ;
-                                                                                color: #000000
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Text765688374--root[data-text765688374-typography=smallTitle] {
-                                                                                color: #000000;
-                                                                                font: normal normal bold 24px/1.33em montserrat, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Text765688374--root[data-text765688374-typography=runningText] {
-                                                                                color: #000000;
-                                                                                font: normal normal normal 16px/1.5em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Text765688374--root[data-text765688374-typography=listText] {
-                                                                                color: #000000;
-                                                                                font: normal normal normal 16px/2em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Text765688374--root[data-text765688374-typography=largeTitle] {
-                                                                                color: #000000;
-                                                                                font: normal normal bold 32px/1.25em avenir-lt-w01_85-heavy1475544, avenir-lt-w05_85-heavy, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Text765688374--root[data-text765688374-mobile][data-text765688374-typography=smallTitle] {
-                                                                                color: #000000;
-                                                                                font: normal normal bold 20px/1.4em montserrat, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Text765688374--root[data-text765688374-mobile][data-text765688374-typography=runningText] {
-                                                                                color: #000000;
-                                                                                font: normal normal normal 14px/1.42em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Text765688374--root[data-text765688374-mobile][data-text765688374-typography=listText] {
-                                                                                color: #000000;
-                                                                                font: normal normal normal 14px/1.72em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Text765688374--root[data-text765688374-mobile][data-text765688374-typography=largeTitle] {
-                                                                                color: #000000;
-                                                                                font: normal normal bold 24px/1.33em avenir-lt-w01_85-heavy1475544, avenir-lt-w05_85-heavy, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root {
-                                                                                border-color: #387780
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic] {
-                                                                                color: #FFFFFF;
-                                                                                background-color: #000000;
-                                                                                border-width: 0px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic]:active,
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic]:hover,
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-focusable3506766611-focus] {
-                                                                                background-color: rgba(0, 0, 0, 0.7);
-                                                                                color: rgba(255, 255, 255, 0.7)
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basicSecondary] {
-                                                                                color: #000000;
-                                                                                background-color: rgba(0, 0, 0, 0);
-                                                                                border-color: #000000;
-                                                                                border-width: 1px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basicSecondary]:active,
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basicSecondary]:hover,
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basicSecondary][data-focusable3506766611-focus] {
-                                                                                color: rgba(0, 0, 0, 0.7);
-                                                                                border-color: rgba(0, 0, 0, 0.7)
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary] {
-                                                                                color: #FFFFFF;
-                                                                                background-color: #387780;
-                                                                                border-width: 0px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary]:active,
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary]:hover,
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-focusable3506766611-focus] {
-                                                                                background-color: rgba(56, 119, 128, 0.7);
-                                                                                color: rgba(255, 255, 255, 0.7)
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=secondary] {
-                                                                                color: #387780;
-                                                                                background-color: rgba(0, 0, 0, 0);
-                                                                                border-color: #387780;
-                                                                                border-width: 1px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=secondary]:active,
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=secondary]:hover,
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=secondary][data-focusable3506766611-focus] {
-                                                                                color: rgba(56, 119, 128, 0.7);
-                                                                                border-color: rgba(56, 119, 128, 0.7)
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-buttonnext3269183541-disabled],
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-buttonnext3269183541-disabled] {
-                                                                                background-color: #C7C7C7
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basicSecondary][data-buttonnext3269183541-disabled],
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=secondary][data-buttonnext3269183541-disabled] {
-                                                                                color: #C7C7C7;
-                                                                                border-color: #C7C7C7
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=tiny] {
-                                                                                font: normal normal normal 14px/1.43em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=small] {
-                                                                                font: normal normal normal 16px/1.5em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=medium] {
-                                                                                font: normal normal normal 16px/1.5em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-mobile][data-button1081927827-size=medium] {
-                                                                                font: normal normal normal 14px/1.44em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=large] {
-                                                                                font: normal normal normal 20px/1.5em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-mobile][data-button1081927827-upgrade] {
-                                                                                font: normal normal normal 14px/1 avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=tiny][data-button1081927827-upgrade] {
-                                                                                font: normal normal normal 14px/1 avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basicSecondary][data-button1081927827-upgrade][data-button1081927827-size=tiny],
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=secondary][data-button1081927827-upgrade][data-button1081927827-size=tiny] {
-                                                                                padding: calc(9px - 1px) 16px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-button1081927827-upgrade][data-button1081927827-size=tiny],
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-button1081927827-upgrade][data-button1081927827-size=tiny] {
-                                                                                padding: calc(9px - 0px) 16px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=small][data-button1081927827-upgrade]:not(mobile) {
-                                                                                font: normal normal normal 16px/1 avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-upgrade][data-button1081927827-priority=basicSecondary][data-button1081927827-size=small],
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-upgrade][data-button1081927827-priority=secondary][data-button1081927827-size=small] {
-                                                                                padding: calc(10px - 1px) 16px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-button1081927827-upgrade][data-button1081927827-size=small],
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-button1081927827-upgrade][data-button1081927827-size=small] {
-                                                                                padding: calc(10px - 0px) 16px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-upgrade][data-button1081927827-priority=basicSecondary][data-button1081927827-size=small][data-button1081927827-mobile],
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-upgrade][data-button1081927827-priority=secondary][data-button1081927827-size=small][data-button1081927827-mobile] {
-                                                                                padding: calc(11px - 1px) 16px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-button1081927827-upgrade][data-button1081927827-size=small][data-button1081927827-mobile],
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-button1081927827-upgrade][data-button1081927827-size=small][data-button1081927827-mobile] {
-                                                                                padding: calc(11px - 0px) 16px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=medium][data-button1081927827-upgrade]:not(mobile) {
-                                                                                font: normal normal normal 16px/1 avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-upgrade][data-button1081927827-priority=basicSecondary][data-button1081927827-size=medium],
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-upgrade][data-button1081927827-priority=secondary][data-button1081927827-size=medium] {
-                                                                                padding: calc(12px - 1px) 16px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-button1081927827-upgrade][data-button1081927827-size=medium],
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-button1081927827-upgrade][data-button1081927827-size=medium] {
-                                                                                padding: calc(12px - 0px) 16px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-upgrade][data-button1081927827-priority=basicSecondary][data-button1081927827-size=medium][data-button1081927827-mobile],
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-upgrade][data-button1081927827-priority=secondary][data-button1081927827-size=medium][data-button1081927827-mobile] {
-                                                                                padding: calc(13px - 1px) 16px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-button1081927827-upgrade][data-button1081927827-size=medium][data-button1081927827-mobile],
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-button1081927827-upgrade][data-button1081927827-size=medium][data-button1081927827-mobile] {
-                                                                                padding: calc(13px - 0px) 16px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=large][data-button1081927827-upgrade]:not(mobile) {
-                                                                                font: normal normal normal 16px/1 avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=large][data-button1081927827-upgrade][data-button1081927827-priority=basicSecondary],
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=large][data-button1081927827-upgrade][data-button1081927827-priority=secondary] {
-                                                                                padding: calc(16px - 1px) 16px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-button1081927827-upgrade][data-button1081927827-size=large],
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-button1081927827-upgrade][data-button1081927827-size=large] {
-                                                                                padding: calc(16px - 0px) 16px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=large][data-button1081927827-upgrade][data-button1081927827-priority=basicSecondary][data-button1081927827-mobile],
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-size=large][data-button1081927827-upgrade][data-button1081927827-priority=secondary][data-button1081927827-mobile] {
-                                                                                padding: calc(17px - 1px) 16px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=basic][data-button1081927827-upgrade][data-button1081927827-size=large][data-button1081927827-mobile],
-                                                                            .comp-lgvufj0d .Button1081927827--root[data-button1081927827-priority=primary][data-button1081927827-upgrade][data-button1081927827-size=large][data-button1081927827-mobile] {
-                                                                                padding: calc(17px - 1px) 16px
-                                                                            }
-
-                                                                            .comp-lgvufj0d .TextButton1946371614--root {
-                                                                                font: normal normal normal 16px/1.5em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-mobile] {
-                                                                                font: normal normal normal 14px/1.44em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
-                                                                                text-decoration:
-                                                                            }
-
-                                                                            .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=primary] {
-                                                                                color: #387780
-                                                                            }
-
-                                                                            .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=primary]:active,
-                                                                            .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=primary]:hover,
-                                                                            .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=primary][data-focusable3506766611-focus] {
-                                                                                color: rgba(56, 119, 128, 0.6)
-                                                                            }
-
-                                                                            .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=secondary] {
-                                                                                color: #000000
-                                                                            }
-
-                                                                            .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=secondary]:active,
-                                                                            .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=secondary]:hover,
-                                                                            .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=secondary][data-focusable3506766611-focus] {
-                                                                                color: rgba(0, 0, 0, 0.6)
-                                                                            }
-
-                                                                            .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=link] {
-                                                                                color: #000000
-                                                                            }
-
-                                                                            .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=link]:active,
-                                                                            .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=link]:hover,
-                                                                            .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=link][data-focusable3506766611-focus] {
-                                                                                color: rgba(0, 0, 0, 0.6)
-                                                                            }
-
-                                                                            .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=link][data-buttonnext3269183541-disabled],
-                                                                            .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=primary][data-buttonnext3269183541-disabled],
-                                                                            .comp-lgvufj0d .TextButton1946371614--root[data-textbutton1946371614-priority=secondary][data-buttonnext3269183541-disabled] {
-                                                                                color: #C7C7C7
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Widget1998546280--ccpa .Widget1998546280--link,
-                                                                            .comp-lgvufj0d .Widget1998546280--ccpa .Widget1998546280--text {
-                                                                                font: normal normal normal 12px/1.4em avenir-lt-w01_35-light1475496;
-                                                                                text-decoration: ;
-                                                                                color: rgb(255, 255, 255)
-                                                                            }
-
-                                                                            .comp-lgvufj0d .Widget1998546280--ccpa .Widget1998546280--link:hover {
-                                                                                font: normal normal normal 12px/1.4em avenir-lt-w01_35-light1475496;
-                                                                                text-decoration: ;
-                                                                                color: rgb(255, 255, 255)
-                                                                            }
-                                                                        </style><span class="Widget1998546280--ccpa">
-                                                                            <div class="Widget1998546280--root comp-lgvufj0d"
-                                                                                data-hook="DoNotSellMyData-wrapper">
-                                                                                <button data-hook="ccpa-link"
-                                                                                    aria-haspopup="dialog"
-                                                                                    class="buttonnext3269183541--root Focusable3506766611--root TextButton1946371614--root Widget1998546280--link"
-                                                                                    data-textbutton1946371614-priority="link"
-                                                                                    type="button" tabindex="0"><span
-                                                                                        class="buttonnext3269183541--content">Do
-                                                                                        Not Sell My Personal
-                                                                                        Information</span></button>
-                                                                            </div>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div id="comp-lgvv8njb"
-                                                                    class="KcpHeO tz5f0K comp-lgvv8njb wixui-rich-text"
-                                                                    data-testid="richTextElement">
-                                                                    <p class="font_7 wixui-rich-text__text"
-                                                                        style="font-size:10px; text-align:right;"><span
-                                                                            class="color_11 wixui-rich-text__text"><span
-                                                                                style="font-size:10px;"
-                                                                                class="wixui-rich-text__text"><a
-                                                                                    href="http://www.steerinteractive.com"
-                                                                                    target="_blank"
-                                                                                    rel="noreferrer noopener"
-                                                                                    class="wixui-rich-text__text"><span
-                                                                                        style="font-family:avenir-lt-w01_85-heavy1475544,avenir-lt-w05_85-heavy,sans-serif;"
-                                                                                        class="wixui-rich-text__text">SITE
-                                                                                        BY</span></a></span></span></p>
-                                                                </div>
-                                                                <div id="comp-lgvvanic"
-                                                                    class="MazNVa comp-lgvvanic wixui-image rYiAuL"><a
-                                                                        data-testid="linkElement"
-                                                                        href="http://www.steerinteractive.com"
-                                                                        target="_blank" rel="noreferrer noopener"
-                                                                        class="j7pOnl"><wow-image id="img_comp-lgvvanic"
-                                                                            class="HlRz5e BI8PVQ"
-                                                                            data-image-info="{&quot;containerId&quot;:&quot;comp-lgvvanic&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:113,&quot;targetHeight&quot;:41,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:6912,&quot;height&quot;:3456,&quot;uri&quot;:&quot;97c9a7_31a5168107f94a28bd0b95abb76ba970~mv2.png&quot;,&quot;name&quot;:&quot;steer-interactive&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;quality&quot;:{&quot;unsharpMask&quot;:{&quot;radius&quot;:0.66,&quot;amount&quot;:1,&quot;threshold&quot;:0.01}},&quot;crop&quot;:{&quot;x&quot;:0,&quot;y&quot;:474,&quot;width&quot;:6912,&quot;height&quot;:2508,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;}}}"
-                                                                            data-bg-effect-name=""
-                                                                            data-has-ssr-src="true"><img
-                                                                                src="https://static.wixstatic.com/media/97c9a7_31a5168107f94a28bd0b95abb76ba970~mv2.png/v1/crop/x_0,y_474,w_6912,h_2508/fill/w_113,h_41,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_auto/steer-interactive.png"
-                                                                                alt="steer-interactive"
-                                                                                style="width:100%;height:100%;object-fit:cover;object-position:50% 50%"
-                                                                                width="113"
-                                                                                height="41" /></wow-image></a></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
                 </div>
-            </div>
-            <div id="SCROLL_TO_BOTTOM" class="Vd6aQZ ignore-focus SCROLL_TO_BOTTOM" tabindex="-1" role="region"
-                aria-label="bottom of page"><span class="mHZSwn">bottom of page</span></div>
+            </footer>
         </div>
     </div>
-<script src="//code.tidio.co/uojagssoo0zgyzcvlt7qvwdxisowzkjl.js" async></script>
+    <div id="SCROLL_TO_BOTTOM" class="Vd6aQZ ignore-focus SCROLL_TO_BOTTOM" tabindex="-1" role="region"
+        aria-label="bottom of page"><span class="mHZSwn">bottom of page</span></div>
+    </div>
+    </div>
+    <script src="//code.tidio.co/uojagssoo0zgyzcvlt7qvwdxisowzkjl.js" async></script>
 </body>
 
 </html>
